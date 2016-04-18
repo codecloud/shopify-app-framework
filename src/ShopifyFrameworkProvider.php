@@ -3,7 +3,7 @@ namespace CodeCloud\ShopifyFramework;
 
 use Illuminate\Support\ServiceProvider;
 
-class ShopifyPaymentsProvider extends ServiceProvider
+class ShopifyFrameworkProvider extends ServiceProvider
 {
     public function boot()
     {
