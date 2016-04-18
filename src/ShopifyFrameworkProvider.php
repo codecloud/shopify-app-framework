@@ -9,7 +9,7 @@ class ShopifyPaymentsProvider extends ServiceProvider
     {
         $this->publishes([
             $this->getMigrationPath() => database_path('migrations'),
-            $this->getConfigPath()    => config_path('shopify-payments.php')
+            $this->getConfigPath()    => config_path('shopify-framework.php')
         ]);
     }
 
@@ -31,6 +31,6 @@ class ShopifyPaymentsProvider extends ServiceProvider
      */
     private function getConfigPath()
     {
-        return realpath(__DIR__ . '/../laravel-config/shopify-payments.php');
+        return realpath(__DIR__ . '/../laravel-config/shopify-framework.php');
     }
 }
