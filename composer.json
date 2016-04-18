@@ -1,0 +1,30 @@
+{
+  "name": "codecloud/shopify-app-framework",
+  "description": "Laravel package providing a framework for Shopify app development",
+  "license": "MIT",
+  "keywords": ["shopify", "api client", "laravel"],
+  "authors": [
+    {
+      "name": "David Smith",
+      "email": "dave@code-cloud.co.uk"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^5.2",
+    "codecloud/shopify-api-client": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeCloud\\ShopifyFramework\\": "src"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/codecloud/shopify-api-client"
+    }
+  ]
+}
